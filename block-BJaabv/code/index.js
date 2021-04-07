@@ -8,7 +8,7 @@
   * [ ] Add an additional argument to the function that takes the conversion rate of human to dog years.
 */
 
-function calculateDogAge(age = 1, coversionRate = 7) {
+function calculateDogAge(age, coversionRate = 7) {
   // Your code goes here
   let dog_age = age * coversionRate;
   return dog_age;
@@ -38,7 +38,7 @@ function celsiusToFahrenheit(temperatureInC = 0) {
   // Your code goes here
 let temperatureInF = (temperatureInC * 9/5) + 32;
 
-return `${temperatureInF} F`;
+return `${temperatureInF} °F is ${temperatureInC}°C`;
 
 }
 
@@ -51,7 +51,7 @@ return `${temperatureInF} F`;
 function celsiusToFahrenheit(temperatureInF = 0) {
   // Your code goes here
   let temperatureInC = (temperatureInF - 32) * (5/9);
-  return `${temperatureInC} C`;
+  return `${temperatureInC} °C is ${temperatureInF}°F`;
 }
 
 /*
