@@ -111,7 +111,7 @@ sumOrProductOfN(4, 'hello'); // alert "Not a valid Input"
 6. 🎖Write a program that accepts a number n using argument and return the sum of the numbers 1 to n
 */
 
-function sumOfN(n = 1) {
+function sumOfN(n) {
   // Your code goes here
   let sum = 0;
   for(let i = 1; i <= n; i++ ) {
