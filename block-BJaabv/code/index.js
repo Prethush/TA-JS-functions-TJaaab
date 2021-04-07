@@ -62,12 +62,12 @@ function celsiusToFahrenheit(temperatureInF = 0) {
   * [ ] If the value of n is below 0 return "The number below 1 is not allowed"
 */
 
-function pow(n = 1, x = 1) {
+function pow(n, x) {
   // Your code goes here
   if(n < 0) {
     return `The number below 1 is not allowed`;
   } else {
-    return x * n;
+    return x ** n;
   }
   
 }
@@ -83,7 +83,7 @@ pow(-31, 2); // "The number below 1 is not allowed"
 and return sum or product of 1,…,n. If user enters any other value than `sum` or `product` alert `Not a valid Input`.
 */
 
-function sumOrProductOfN(n = 1, operation) {
+function sumOrProductOfN(n, operation) {
   // Your code goes here
   
   if(operation === `sum`) {
@@ -126,7 +126,7 @@ function sumOfN(n = 1) {
 
 // Your code goes here
 
-function sumOfN(n = 1) {
+function sumOfN(n) {
   let sum = 0;
   for(let i = 1; i <= n; i++) {
     if((i % 5 === 0) || (i % 7 === 0)) {
@@ -139,7 +139,7 @@ function sumOfN(n = 1) {
 8. 🎖Write a function `min` that takes two arguments and returns their minimum.
 */
 
-function min(num1 = 0, num2 = 0) {
+function min(num1, num2) {
   // Your code goes here
   return num1 > num2 ? num2 : num1; 
 }
